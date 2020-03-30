@@ -1,0 +1,33 @@
+/** Import  External Library **/
+@import url(css/bootstrap.min.css);
+
+/** Import Style All Pages **/
+@import url(css/nav.css);
+@import url(css/slider.css);
+@import url(css/index.css);
+
+/** Import Fonts **/
+@font-face{
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto-Medium.ttf');
+    src: url('assets/fonts/Roboto-Regular.ttf')
+}
+
+/** General Styles **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    width: 100%;
+}
+#main{
+    width: 100%;
+}
+
+
+

@@ -1,0 +1,145 @@
+/** Navegation Menu **/
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_menu_content{display:none;}
+/** Logotipe **/
+.logo-container{
+    display: flex;
+    margin-left: 30px;
+}
+.logo-container h1{
+    line-height: 60px;
+    font-size: 30px;
+}
+.logo-container h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo-container .bar-separator{
+    width: 2px;
+    height: 40px;
+    background:#fff;
+    margin:10px;
+}
+.logo-container h2{
+    line-height: 60px;
+    font-size: 30px;
+}
+.logo-container h2 a{
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+}
+.logo-container h2 a:hover{
+    color: #40e0d0;
+}
+
+/** List Container **/
+.list-container{margin-right: 30px;}
+.list-container .lists{display: flex; line-height: 60px;}
+.list-container .lists li{list-style: none;}
+.list-container .lists li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0px 10px;
+    transition: 300ms;
+}
+.list-container .lists li a:hover{
+    color: #40e0d0;
+}
+
+/** Slider **/
+.slider_header .slider_header{
+    position: relative;
+}
+.slider_header .carousel{
+    width: 100%;
+    height: 100vh;
+}
+.slider_header .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.slider_header .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.slider_header .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay_slider{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+}
+.header_form{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header_form .form-control{
+    width: 500px;
+}
+.header_form h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+@media only screen and (max-width:798px) {
+    .header_form .form-control{
+        width: 300px;
+    }
+    .header_form h2{
+        font-size: 30px;
+    }
+    .btn_menu_content{
+        display:block;
+        line-height: 60px;
+        margin-right: 50px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: #fff;
+    }
+    .list-container .lists{
+        margin:20px 20px;
+        flex-direction: column;
+    }
+    .list-container .lists li{
+        border-bottom: 1.5px solid #252a34;
+    } 
+    .list-container .lists li a{
+        color: #252a34;
+        text-align: center;
+    }
+ }
+
